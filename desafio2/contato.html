@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio II - Clinica veterinária</title>
+</head>
+
+<body style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+    <div style="width: 1200px; display: flex; margin: 0 auto; background-color: aquamarine;">
+        <div id="menu" style="width: 15%; background-color: gainsboro; padding: 10px 20px 0px;">
+            <p><a href="index.html">Home</a></p>
+            <p><a href="sobre.html">Sobre a Clinica</a></p>
+            <p><a href="atendimento.html">Atendimento</a></p>
+            <p><a href="contato.html">Contato</a></p>
+        </div>
+
+        <div id="main" style="display: flex; flex-flow: column; width: 85%;">
+            <div id="header" style="background-color: white; min-height: 150px; padding: 10px;">
+                <img src="logo-clinica-contato.png" height="150px" >
+                <hr style="color: dimgray; height: 5px; background-color: dimgray;"/>
+            </div>
+
+            <div id="content"  style="color: dimgray; background-color: white; min-height: 400px; padding: 20px;">
+                <p style="font-size: x-large; font-weight: 900; color: chocolate;">Nosso endereço</p>
+                <p>Quadra 103 Lote 10, Número 192<br>
+                Águas Claras - Brasília/DF<br>
+                (61) 3223-1245</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3838.4478704542676!2d-48.0209588148111!3d-15.83304103473251!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a321428ee3191%3A0x8311fa2fe7202bf9!2sPra%C3%A7a%20Juriti%20-%20Q.%20103%20-%20%C3%81guas%20Claras%2C%20Bras%C3%ADlia%20-%20DF!5e0!3m2!1spt-BR!2sbr!4v1730054371439!5m2!1spt-BR!2sbr" width="600" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                <p style="font-size: x-large; font-weight: 900; color: chocolate;">Faça contato conosco</p>
+                <form method="get">
+                    <label>Informe seu nome:</label><br>
+                    <input type="text" id="nome" name="nome" maxlength="80" style="width: 300px; height: 30px;"><br><br>
+                    <label>Informe o Email:</label><br>
+                    <input type="email" id="email" name="email" maxlength="80" style="width: 300px; height: 30px;"><br><br>
+                    <label>Selecione o assunto:</label><br>
+                    <select name="assunto" id="assunto" style="width: 200px; height: 30px;">
+                        <option value="0">Elogio</option>
+                        <option value="1">Reclamação</option>
+                        <option value="2">Dúvida/questionamento</option>
+                        <option value="3">Agendamento</option>
+                        <option value="4">Outro assunto</option>
+                    </select><br><br>
+                    <label>Digite o texto desejado:</label><br>
+                    <textarea id="mensagem" name="mensagem" cols="80" rows="10"></textarea><br>
+    
+                    <input type="submit" value="Enviar dados">
+                    <input type="reset" value="Limpar campos">
+                </form>
+            </div>
+
+            <div id="footer" style="background-color: darksalmon; min-height: 50px; padding: 5px;">
+                <p>© 2022 Carlos Luz - Todos os direitos reservados.
+                    <span style="padding: 200px;">
+                        <a href="https://www.facebook.com/cvanbrasilia/" target="_blank"><img src="face.png" height="30px"/></a>
+                        <a href="https://www.instagram.com/vetasanorte/" target="_blank"><img src="instagram.png" height="30px"/></a>
+                        <a href="#"><img src="youtube.png" height="30px"/></a>
+                    </span>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
